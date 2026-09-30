@@ -8,7 +8,6 @@ from decimal import Decimal, InvalidOperation
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
-
 from .models import Transaction
 from .serializers import TransactionSerializer
 
@@ -62,6 +61,12 @@ class TransactionHistoryView(APIView):
             transactions = transactions.filter(created_at__date=date)
         
         transactions = transactions.order_by("-created_at")
+        serializer = TransactionSerializer(transactions, many=True)
+
+        return Response(
+            serializer.data,
+            status=status.HTTP_200_OK
+        )
 
 
 class TransactionCSVExportView(APIView):
