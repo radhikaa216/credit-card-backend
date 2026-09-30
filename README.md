@@ -567,38 +567,6 @@ docker compose down
 
 ---
 
-# Screenshots
-
-Screenshots can be stored inside:
-
-```text
-screenshots/
-```
-
-Recommended submission screenshots include:
-
-- Django registration API
-- Login and JWT authentication
-- Card creation
-- Saved card listing
-- Card deletion
-- FastAPI payment creation
-- Payment SUCCESS/FAILED processing
-- Transaction history
-- Transaction filters
-- CSV export
-- Daily payment summary
-- Django Admin
-- Admin logs
-- Django Swagger documentation
-- FastAPI Swagger documentation
-- Automated test results
-- 82% coverage report
-
-Docker screenshots should only be included after Docker runtime verification has been completed successfully.
-
----
-
 # Admin Credentials
 
 Admin credentials should be provided separately to the evaluator if required.
@@ -652,10 +620,6 @@ The project submission contains:
 - MySQL database dump
 - Postman collection export
 
-## Remaining Verification
-
-- Final screenshot organization
-- Docker runtime verification
 
 ---
 
